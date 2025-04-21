@@ -21,40 +21,25 @@ export default function TabLayout() {
       }}
     >
       <Tabs.Screen
-        name="index"
-        options={{
-          title: "Home",
-          tabBarIcon: ({ color, focused }) => (
-            <Ionicons
-              name={focused ? "home-sharp" : "home-outline"}
-              color={color}
-              size={24}
-            />
-          )
-        }}
-      />
-      <Tabs.Screen
-        name="perfil_cuidador"
-        options={{
-          title: "Perfil cuidador",
-          tabBarIcon: ({ color, focused }) => (
-            <Ionicons
-              name={
-                focused ? "person-circle" : "person-circle-outline"
-              }
-              color={color}
-              size={24}
-            />
-          )
-        }}
-      />
-      <Tabs.Screen
         name = "perfil_bebe"
         options={{
           title: "Perfil bebe",
           tabBarIcon: ({ color, focused }) => (
             <Ionicons
               name={focused ? "people-circle" : "people-circle-outline"}
+              color={color}
+              size={24}
+            />
+          )
+        }}
+        />
+        <Tabs.Screen
+        name = "lista_bebe"
+        options={{
+          title: "Lista bebe",
+          tabBarIcon: ({ color, focused }) => (
+            <Ionicons
+              name={focused ? "list-circle" : "list-circle-outline"}
               color={color}
               size={24}
             />

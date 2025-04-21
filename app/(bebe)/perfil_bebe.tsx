@@ -1,12 +1,11 @@
 import { Text, View, StyleSheet } from 'react-native';
 import { Link } from 'expo-router';
 
-export default function Index() {
+export default function Perfilbebe() {
   return (
     <View style = {style.container}>
-      <Text style = {style.Text}>pantalla de inicio</Text>
-      <Link href='/perfil_bebe' style={style.button}>perfil bebe</Link>
-      <Link href='/perfil_cuidador' style={style.button}>perfil cuidador</Link>
+      <Text style = {style.Text}>Perfil bebe</Text>
+      <Link href='/' style={style.button}>volver a inicio</Link>
     </View>
   );
 }
